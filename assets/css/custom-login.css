@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Open Sans Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans Regular'), url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans Bold'), url('../fonts/OpenSans-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Poppins Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Poppins Light'), url('../fonts/Poppins-Light.woff') format('woff');
+}
+
+html body{
+	background-image:url(../images/bg-login.png); 
+	background-size: cover;
+	font-size: 13px;
+	font-family: 'Open Sans Regular';
+}
+@media (min-width: 992px){
+	.app-content.container {
+	    width: 67%;
+	}
+}
+@media (min-width: 1500px) { 
+	.app-content.container {
+	    width:80%;
+	}
+}
+
+.bg-selamatdatang{
+	background-image: url('../images/bg-dalam.png');
+	background-size: cover;
+    background-position: right;
+	border-top-right-radius: 0 !important; 
+	border-bottom-right-radius: 0 !important;
+	border-top-left-radius: 19px !important;
+	border-bottom-left-radius: 19px !important;
+	padding: 6% 5% 5%;
+	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5) !important;
+}
+.bg-selamatdatang h5 {
+	font-family: 'Open Sans Regular';
+	/*font-size: 24px;*/
+	font-size: 22px;
+	color: #fff;
+}
+.bg-selamatdatang h3 {
+	font-family: 'Open Sans Bold';
+	/*font-size: 28px;*/
+	font-size: 24px;
+	color: #B4EAFF;
+	margin-bottom: 7%;
+}
+.bg-selamatdatang p{
+	font-family: 'Open Sans Regular';
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 0 !important;
+	text-align: justify;
+}
+.bg-selamatdatang .col-md-7 {
+	/*margin-top: 5%;*/
+}
+.bg-selamatdatang .col-md-6 {
+	margin-top: 5%;
+}
+.bg-selamatdatang img{
+	width: 100%;
+	height: auto;
+}
+.bg-selamatdatang .btn-coba{
+	background-image: linear-gradient(to right, #CDFF22, #09D116);
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 19px;
+	border-color: #09D116;
+}
+.bg-selamatdatang .btn-coba:hover,
+.bg-selamatdatang .btn-coba:active{
+	background-image: linear-gradient(to right, #09D116, #09D116);
+}
+.bg-selamatdatang .btn-pesan{
+	background-image: linear-gradient(to right, #FFBC00, #FF9204);
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 19px;
+	border-color: #FF9204;
+}
+.bg-selamatdatang .btn-pesan:hover{
+	background-image: linear-gradient(to right, #FF9204, #FF9204);
+}
+
+.v-login .card{
+	border-radius: 19px;
+}
+.v-login .card-header {
+	border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.v-login .card-body{
+	border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+.v-login .card-body .f-12 {
+	font-size: 12px
+}
+.v-login .card-body .card-link{
+	color: #3A3A3A;
+}
+
+.v-login .btn{
+	background-color: #1976D2;
+	color: #fff;
+	border-radius: 60px;
+    padding: 7px 18px;
+}
+.v-login .text-md-left{
+	padding-right: 0;
+}
+.v-login form p{
+	    margin-bottom: .5rem;
+}
+.v-login form .form-control {
+    border: 1px solid #ccd6e6;
+    color: #3f587e;
+    border: 0;
+    background-color: #F5F5F5;
+    border-left: 3px solid #1A94D5;
+    border-radius: 0;
+}
+
+.bg-gradient-directional-purple {
+    background-image: -webkit-linear-gradient(45deg,#7B1FA2,#BA68C8);
+    background-image: linear-gradient(45deg,#7B1FA2,#BA68C8);
+    background-repeat: repeat-x;
+}
+.btn-purple {
+    background-color: #9C27B0!important;
+    color: #FFF;
+    border-color: #7B1FA2;
+}
+form.formlupapassword{
+	margin-top: -7%;
+    display: none;
+}
+p.flip {
+    margin: 0px;
+    padding: 5px;
+    /*text-align: center;
+    background: #ddd;
+    border: solid 1px #fff;*/
+  }
+
+#link_registrasi {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.blank-page .content-wrapper .flexbox-container {
+	    height: auto;
+	    padding-bottom: 10%;
+	}	
+	.v-login .text-md-left{
+		padding-right: 15px;
+	}
+	.bg-selamatdatang {
+	    display: none;
+	}
+	#link_registrasi {
+		display: block;
+	}
+}

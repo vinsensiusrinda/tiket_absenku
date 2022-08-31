@@ -1,0 +1,1580 @@
+@font-face {
+	font-family: 'Poppins Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Poppins Regular'), url('../fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Poppins Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Poppins Light'), url('../fonts/Poppins-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Poppins SemiBold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Poppins SemiBold'), url('../fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Poppins Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Poppins Medium'), url('../fonts/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/proxima_nova_reg-webfont.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'Poppins Light';
+        font-size: 13px;
+}
+@media (max-width: 768px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+/*CSS Header*/
+	.header-navbar.navbar-brand-center .navbar-header {
+	    left: 7.999%;
+	}
+	.header-navbar .navbar-container {
+	    padding: 0rem 30px;
+	}
+	.header-navbar {
+	    background: #fff;
+    	box-shadow: 0px 3px 6px #00000029;
+    	border-bottom: 1px solid #E4E7ED;
+	}
+	/*Header Kanan*/
+		.header-navbar .navbar-container ul.nav li i.ficon {
+		    color: #1063E0;
+		}
+		.header-navbar .navbar-container ul.nav li .badge-danger {
+		    background-color: #F22C43;
+		}
+		.header-navbar .navbar-container ul.nav li a.dropdown-user-link .avatar {
+		    margin-right: 0;
+		}
+		.header-navbar .navbar-container ul.nav li a.dropdown-user-link {
+		    padding: 1.155rem 0.6rem;
+		    padding-right: 0;
+		}
+		.dropdown-user .dropdown-toggle::after{
+			display: none;
+		}
+		.header-navbar .navbar-container ul.nav li a.nav-link-label {
+		    padding-top: 1.5rem;
+		    padding-bottom: 1.5rem;
+		    font-size: 90%;
+		}
+		.logo-client img {
+			height: 34px;
+			width: auto;
+			margin-right: 7px;
+		}
+	/*Header Kanan Selesai*/
+
+	/* Menghilangkan garis bawah pada daftar notifikasi */
+		.header-navbar .navbar-container .dropdown-menu-media .media-list a:last-child .media {
+			border-bottom: 0 !important;
+		}
+	/* END Menghilangkan garis bawah pada daftar notifikasi */
+
+	@media (max-width: 768px) {
+		.header-navbar .navbar-container ul.nav li a.dropdown-user-link{
+		    padding: 0.8rem 0.6rem;
+		}
+		.header-navbar .navbar-container ul.nav li a.nav-link-label {
+		    padding: 1.4rem 0rem 1rem 0.8rem;
+		}
+	}
+/*CSS Header Selesai*/
+
+/*CSS Menu*/
+	#sticky-wrapper {
+		/*padding: 0 2.143rem;
+    	margin: 40px 0 0;*/
+	}
+	.header-navbar.navbar-shadow {
+	    box-shadow: none;
+	}
+	.header-navbar .nav .nav-item i {
+	    align-self: center;
+	    color: #1C77D4;
+	}
+	#sticky-wrapper .header-navbar {
+	    min-height: auto;
+	}
+	.navbar-light.navbar-horizontal {
+	    /*background: transparent;*/
+	    background: #f6f8fa;
+	}
+	.horizontal-menu .navbar-light ul#main-menu-navigation > li.active > a,
+	.horizontal-menu .navbar-light ul#main-menu-navigation > li > a:hover{
+	    border-bottom: 0;
+	    font-weight: 600;
+	    color: #1C77D4;
+	    background-color: #fff !important;
+	}
+	.horizontal-menu .navbar-light ul#main-menu-navigation > li.show > a{
+	    background-color: #fff !important;
+	}
+	.horizontal-menu .navbar-light .mega-dropdown-menu .active > a {
+	    border-bottom: 2px solid #1C77D4;
+	    background-color: transparent !important;
+	    color: #1C77D4 !important;
+    	font-weight: 600;
+	}
+	.navbar-nav .mega-dropdown-menu ul a.dropdown-item {
+    	padding: 17px 23px;
+	    display: block;
+	    font-size: 13.5px;
+	    color: #434343;
+	    font-family: 'Poppins Light';
+	    border-bottom: 2px solid transparent;
+    }
+    .navbar-nav .mega-dropdown-menu ul a.dropdown-item:hover {
+    	background-color: transparent;
+    	border-bottom: 2px solid #1C77D4;
+    }
+	#sticky-wrapper .header-navbar .navbar-container {
+	    /*padding: 0px;*/
+	}
+	.navbar-nav .mega-dropdown-menu {
+	    margin: 0;
+	    width: 100%;
+	    border: 0;
+	    /*padding: 0;*/
+	    padding: 0rem 30px;
+	}
+	.nav-item.show.active .mega-dropdown-menu {
+		z-index: 9998;
+	}
+	.drilldown-menu.sliding-menu {
+	    height: auto !important;
+	}
+	.navbar-nav .mega-dropdown-menu ul li{
+		display: inline-block;
+	}
+	#sticky-wrapper .header-navbar .navbar-container ul.nav li > a.nav-link {
+	    padding: 15px 25px;
+		font-family: 'Poppins Light';
+		font-size: 13.5px;
+	}
+	a.dropdown-toggle::after {
+	    font-family: 'FontAwesome';
+	    content: "\f105" !important;
+	    border: none !important;
+	    position: relative !important;
+	    top: 1px;
+	    right: 0px;
+	    padding: 0 2px 0 6px;
+	    margin: 0 0.3em 0 0;
+	    vertical-align: 0;
+	}
+	.show a.dropdown-toggle::after {
+	    font-family: 'FontAwesome';
+	    content: "\f107" !important;
+	    border: none !important;
+	    position: relative !important;
+	    top: 1px;
+	    right: 0px;
+	    padding: 0 2px 0 6px;
+	    margin: 0 0.3em 0 0;
+	    vertical-align: 0;
+	}
+	/*ini untuk mengakali submenu yang 2 baris*/
+
+	@media (min-width:900px) and (max-width:1450px){
+		.app-content.content.margin-submenu{
+			margin-top: 3em;
+		}
+	}
+	@media (min-width:1451px) and (max-width:2099px){
+		.app-content.content.margin-submenu{
+			margin-top: 0em;
+		}
+	}
+	@media (max-width:2559px) and (min-width:2100px){
+		.app-content.content.margin-submenu{
+			margin-top: 0em;
+		}
+	}
+	@media only screen and (min-width: 2560px){
+		.app-content.content.margin-submenu{
+			margin-top: 0em;
+		}
+	}
+	/*ini untuk mengakali submenu yang 2 baris selesai*/
+/*CSS Menu Selesai*/
+
+/*CSS Judul*/
+	.content-header {
+		background-color: #FFFFFF;
+	    padding: 15px;
+	    border-radius: 15px;
+	    margin-top: 1%;
+	    margin-bottom: 2%;
+	    box-shadow: 2px 6px 7px #00000014;
+	}
+	html body .content .content-wrapper .content-header-title{
+		font-family: 'Poppins SemiBold';
+		color: #1C77D4;
+		font-size: 18px;
+	    letter-spacing: normal;
+	    font-weight: normal;
+	}
+	.breadcrumbs-top .breadcrumb {
+		font-family: 'Poppins Light';
+		text-transform: capitalize;
+	}
+	.breadcrumbs-top .breadcrumb a{
+		color: #A7A7A7
+	}
+	.breadcrumbs-top .breadcrumb-item.active {
+	    color: #1C77D4;
+	}
+	.content-header {
+	  position: relative;
+	}
+
+	.content-header:before {
+	  content: "";
+	  position: absolute;
+	  left: 0; /* Change direction for a different side*/
+	  top: 22px;
+	  width: 4px; /* Thickness */
+	  height: 30px;
+	  background: #1C77D4; /* Color */
+	  box-shadow: 2px 6px 7px #00000014;
+	  /*z-index: 100; */
+	}
+/*CSS Judul*/
+
+/*CSS Body*/
+	html body .content .content-wrapper {
+	    padding-top: 5%;
+	}
+
+	.card.card-rounded {
+		border-radius: 15px;
+	}
+	.card.card-rounded .card-header {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.card-abu{
+		border: 1px solid #dcdcdc;
+	}
+	.card-abu .card-header{
+		background-color: #f9f9f9;
+		color: #434343;
+		padding: 1em 1.5em;
+	}
+	.card-abu .card-header .card-title{
+		font-family: 'Poppins SemiBold';
+		text-transform: none;
+		font-size: 16px;
+	}
+	.card-abu .card-title .btn{
+		font-family: 'Poppins Regular';
+	    padding: .4rem .6rem;
+    	margin-top: -5px;
+	    /* position: absolute; */
+	    right: 20px;
+	    font-size: 12px;
+	}
+	.card-abu .card-footer {
+		border-bottom-left-radius: 15px;
+	    border-bottom-right-radius: 15px;
+	    padding: 1em 1.5em;
+	}
+
+	.modal-title {
+		font-family: 'Poppins Regular';
+		font-size: 16px;
+	}
+	.modal-header {
+	    border-bottom: 1px solid #e9ecef;
+	}
+	.modal-footer {
+	    border-top: 1px solid #e9ecef;
+	}
+
+	.m-height-60 {
+		max-height: 60px;
+	}
+
+	@media (max-width: 768px){
+		.m-height-60 {
+			width: 100%;
+			max-height: 40px;
+    		object-fit: contain;
+		}
+
+		.card-abu .card-title .btn {
+		    position: static;
+		    margin-top: 1.5em;
+		}
+	}
+
+	@media (max-width: 575px){
+		.hidden-xs-down {
+		    display: none!important;
+		}
+	}
+	@media (min-width: 576px){
+		.hidden-sm-up {
+		    display: none!important;
+		}
+	}
+
+	/*CSS Card*/
+		.card-absenku.card-header {
+		  position: relative;
+		  border-top-left-radius: 15px;
+		  border-top-right-radius: 15px;
+		  color: #797979;
+		}
+		.card-absenku.card-header:before {
+		  content: "";
+		  position: absolute;
+		  left: 0; /* Change direction for a different side*/
+		  top: 15px;
+		  width: 6px; /* Thickness */
+		  height: 30px;
+		  background: #1C77D4; /* Color */
+		  box-shadow: 2px 6px 7px #00000014;
+		  /*z-index: 100; */
+		}
+
+		.card-absenku.card-header h4{
+			font-family: 'Poppins SemiBold';
+			color: #1C77D4;
+			text-transform: capitalize;
+			font-size: 17px;
+			letter-spacing: normal;
+		}
+		.card-absenku.card-header .heading-elements-toggle {
+		    top: 20px;
+		}
+		.card-absenku.card-header .heading-elements{
+		    top: 20px;
+		}
+
+		.card-info-absenku {
+			padding-bottom: 14px;
+		}
+		.card-info-absenku .alert{
+			font-size: 12px;
+		    font-weight: normal;
+		    font-family: 'Poppins Light';
+		    background-color: #FFECB7;
+		    color: #F1952B;
+		    border-radius: 28px;
+		    padding: 0.6rem 1rem;
+		    margin-top: -5px;
+		    margin-bottom: 0;
+		    letter-spacing: 0.05rem;
+		}
+
+
+		@media (max-width: 768px) {
+			.card-absenku .card-header:before {
+			    content: "";
+			    position: absolute;
+			    left: 0;
+			    top: 17px;
+			    width: 4px;
+			    height: 26px;
+			}
+			.card-info-absenku .alert {
+			    font-size: 11px;
+			    margin-top: 15px;
+			}
+			.card-absenku .card-header h4 {
+			    font-size: 16px;
+			}
+		}
+	/*CSS Card Selesai*/
+
+	/*CSS form*/
+		.form-control {
+		    padding: .6rem 1rem !important;
+		    font-size: 13px;
+		}
+		.dataTables_filter .form-control {
+		    line-height: 1.25;
+		    height: calc(2.4rem + 2px) !important;
+		    padding: .6rem 1rem !important;
+		}
+		select.form-control:not([size]):not([multiple]),
+		.select2-container .select2-selection--single .select2-selection__rendered,
+		.select2-container--classic .select2-selection--single,
+		.select2-container--default .select2-selection--single {
+		    height: calc(2.4rem + 2px) !important;
+		}
+	/*CSS form sELESAI*/
+
+	/*Css Button*/
+		.btn {
+			padding: .6rem 1rem;
+			font-size: 13px;
+		}
+		.btn-lg, .btn-group-lg > .btn {
+		    padding: .8rem 1.25rem !important;
+		    font-size: 1.25rem !important;
+		}
+		.btn-biru {
+			background-color: #1C77D4;
+			color: #fff;
+			border: 1px solid #1C77D4;
+		}
+		.btn-outline-biru {
+			background-color:transparent;
+			color: #1C77D4;
+			border: 1px solid #1C77D4;
+		}
+		.btn-daftar {
+			background-image: linear-gradient(to right, #FF9200 , #FFC300, #FF9200);
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+	/*Css Button Selesai*/
+
+	/*CSS Table*/
+		table.dataTable thead {
+			background-color: #1c77d4;
+    		color: #fff;
+			text-align: center;
+			font-size: 13.5px;
+		}
+		table.dataTable th,
+		table.dataTable td {
+		    border-top:0;
+		    padding: .75rem 1rem;
+		}
+		table.dataTable td {
+			color: #434343;
+			font-family: 'Poppins Regular';
+			vertical-align: middle;
+		}
+		table.dataTable .badge {
+			font-size: 100%;
+		}
+		.table thead th {
+			border-bottom: 1px solid #e3ebf3;
+		}
+
+	/*CSS Table selesai*/
+
+	@media only screen and (min-width:1450px){
+		html body .content {
+		    min-height: calc(85% - 32px);
+		}
+	}
+/*CSS Body Selesai*/
+
+/*CSS Footer*/
+	footer{
+		font-family: 'Proxima Nova Regular';
+	    background: #1760B7;
+	    color: #fff;
+	    border-top: 2px solid #14D0FF;
+	    padding: 12px;
+	    font-size: 14px;
+	    letter-spacing: 1px;
+    	word-spacing: 1px;
+	}
+/*CSS Footer Selesai*/
+
+/*CSS Plugin*/
+	.dropify-wrapper{
+		border: 1px dashed #BABFC7 !important;
+	}
+/*CSS Plugin Selesai*/
+
+/*CSS Register*/
+	.banner-register {
+		background-image: url(../images/bg-biru.jpg);
+	    background-position: top;
+	    background-size: cover;
+	    height: 64.2em;
+	    padding: 4.5em 4em 0;
+    	color: #fff;
+    	margin-right: 8%;
+	}
+	.banner-register h3{
+		font-family: 'Poppins Light';
+		font-size: 2em;
+	    word-spacing: 2px;
+	    line-height: 1.4;
+	}
+	.banner-register h3 strong{
+		font-family: 'Poppins SemiBold';
+		font-weight: normal !important;
+		color: #64fbff;
+	}
+	.banner-register p {
+		font-size: 16px;
+	    text-transform: capitalize;
+	    margin: 3em 0;
+	    line-height: 1.7;
+	    word-spacing: 1px;
+	}
+	.banner-register h2{
+		font-family: 'Poppins Light';
+		    margin-bottom: 2em;
+	}
+	.banner-register button{
+		    background-color: #26f098 !important;
+	    padding: .9em 2.5em;
+	    font-size: 16px;
+	    border-radius: 24px;
+	}
+	.banner-register img.support{
+		width: 89%;
+	    position: absolute;
+	    bottom: 1.38em;
+	    left: .1em;
+	}
+
+    @media (max-width: 768px) {
+    	.banner-register {
+		    height:auto;
+		    padding: 3em 2em 0;
+		    margin-right: 0;
+		    margin-bottom: 10%;
+		}
+		.banner-register h3 {
+		    font-size: 1.5em;
+		}
+		.banner-register p {
+		    font-size: 14px;
+		    margin: 1.7em 0;
+		}
+		.banner-register h2 {
+		    font-size: 1.4em;
+		    margin-bottom: 1.5em;
+		}
+		.banner-register button {
+		    padding: .5em 1.6em;
+		    font-size: 14px;
+		}
+		.banner-register img.support {
+		    /*width: 90%;
+		    bottom: 0;
+		    left: 1em;*/
+		    position: initial;
+		    width: 100%;
+		    left: 0;
+		    margin-top: 4em;
+		}
+    }
+
+    @media (min-width: 1500px) {
+    	.banner-register {
+		    height: 69.2em;
+		    padding: 7em 4em 0;
+		}
+    }
+/*CSS Register Selesai*/
+
+/*Register Berhasil*/
+	.register-berhasil{
+		margin-top: 2em;
+		text-align: center;
+	}
+	.register-berhasil h2{
+		font-family: 'Poppins Regular';
+		font-size: 2.4em;
+	    word-spacing: 2px;
+	    line-height: 1.4;
+		color: #1c77d4;
+	}
+	.register-berhasil h2 strong{
+		font-family: 'Poppins SemiBold';
+		font-weight: normal !important;
+	}
+	.register-berhasil h3{
+		font-family: 'Poppins Light';
+		font-size: 1.3em;
+	    word-spacing: 2px;
+	    line-height: 1.4;
+		color: #434343;
+	    margin-bottom: 2em;
+	}
+	.register-berhasil img {
+		width: 45%;
+		    margin: 2.5em 0 3em;
+	}
+	.register-berhasil button{
+		font-family: 'Poppins Regular';
+		background-image: linear-gradient(to right, #055fb1, #1e80e2, #055fb1);
+    	color: #fff;
+    	border:1px solid #055fb1;
+	    padding: .7em 2.5em;
+	    font-size: 16px;
+	    border-radius: 24px;
+	    min-width: 12em;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	}
+	.register-berhasil button:hover{
+		background-color: #055fb1;
+	}
+
+	@media (max-width: 768px) {
+		.register-berhasil {
+    		margin-top: 7em;
+    	}
+		.register-berhasil h2{
+			font-size: 1.7em;
+		}
+		.register-berhasil img {
+		    width: 80%;
+		    margin: 3.2em 0;
+		}
+		.register-berhasil h3 {
+		    margin-bottom: 1.8em;
+		    font-size: 1.1em;
+		}
+		.register-berhasil button {
+		    font-size: 14px;
+		    padding: .5em 2.5em;
+		    min-width: 10em;
+		}
+	}
+
+    @media (min-width: 1500px) {
+		.register-berhasil {
+		    margin-top: 4.5em;
+		}
+	}
+/*Register Berhasil Selesai*/
+
+/*CSS Dashboad*/
+	.info-absenku{
+		font-family: 'Proxima Nova Regular';
+		color: #303132;
+		font-size: 14px;
+	}
+	.info-absenku h4{
+		font-family: 'Poppins SemiBold';
+		color: #1C77D4;
+		font-size: 16px;
+    	margin-bottom: 5%;
+	}
+	.info-absenku img{
+		height: 24px;
+		margin-right: 7px;
+	}
+	.btn-upgrade {
+		background-image: -webkit-linear-gradient(left,#1C77D4 0,#3DC5FF 100%);
+	    background-image: linear-gradient(to right,#1C77D4 0,#3DC5FF 100%);
+	    background-repeat: repeat-x;
+	    color: #fff;
+		font-family: 'Proxima Nova Regular';
+	}
+
+	.daftar-pengajuan .nav-tabs {
+		border-bottom: 0;
+	}
+	.daftar-pengajuan .nav.nav-tabs .nav-item .nav-link.active,
+	.daftar-pengajuan .nav.nav-tabs .nav-item .nav-link:hover {
+	    background-color: #D8E9FA;
+	    color: #1C77D4;
+	    border: 1px solid #1C77D4;
+	}
+	.daftar-pengajuan .nav.nav-tabs .nav-item .nav-link{
+		font-family: 'Poppins Medium';
+		background-color: #F9F9F9;
+	    border: 1px solid #747474;
+	    color: #353535;
+	    padding: .3rem 1.3rem;
+	    border-radius: 1.5rem;
+	    margin-right: 2em;
+	    font-size: 12.5px;
+	}
+	.daftar-pengajuan .tab-content{
+		margin-top: 1.3rem;
+	}
+	.daftar-pengajuan .card{
+		border: 1px solid #efefef;
+    	border-radius: 16px;
+	}
+	.daftar-pengajuan .card .card-header{
+		border-top-left-radius: 16px;
+	    border-top-right-radius: 16px;
+	    padding: 1em;
+	}
+	.daftar-pengajuan .card .card-content{
+		border-bottom-left-radius: 16px;
+    	border-top-right-radius: 16px;
+	}
+	.daftar-pengajuan .card .card-body{
+		padding: .7em 1em;
+	}
+	.daftar-pengajuan .card-title .fa {
+		float: left;
+	    font-size: 30px;
+	    margin-right: 10px;
+	    font-weight: normal;
+	}
+	.daftar-pengajuan .card-title{
+		font-family: 'Poppins Regular';
+	    text-transform: capitalize;
+	    letter-spacing: normal;
+		color: #434343;
+	}
+	.daftar-pengajuan .card-title small{
+		color: #b2b2b2;
+	}
+	.daftar-pengajuan .card-title .btn {
+		    position: absolute;
+	    top: 1.4em;
+	    left: 49%;
+	    padding: .4rem 1.3rem;
+	}
+	.daftar-pengajuan .card-header .btn-group{
+	    position: absolute;
+	    top: 20px;
+	    right: 21px;
+	}
+	.daftar-pengajuan .card-header .btn-group .btn{
+		background-color: transparent;
+		padding-right: 0;
+	    font-size: 20px;
+	    color: #949494;
+	    padding-top: 0;
+	}
+	.daftar-pengajuan .card-header .btn-group .dropdown-toggle::after {
+		display: none;
+	}
+	.daftar-pengajuan .card .card-body h4.judul {
+		font-family: 'Poppins Medium';
+		font-size: 16px;
+	}
+	.daftar-pengajuan .card .card-body p {
+		font-family: 'Poppins Regular';
+		color: #353535;
+	    font-size: 14px;
+	    margin-bottom: .3rem;
+	}
+	.daftar-pengajuan .card .card-body .infotgl{
+		font-family: 'Poppins Regular';
+		color: #353535;
+	}
+	.daftar-pengajuan .card .card-body small{
+		margin-bottom: .7em;
+		color: #a6a6a6;
+	}
+	.daftar-pengajuan .card .card-body .deskripsi {
+		margin-top: .7em;
+		color: #A3A3A3;
+		font-size: 13px;
+	}
+	.daftar-pengajuan .card .card-body .btn-light{
+		color: #353535;
+		background-color: #f7f5f5;
+		border:0;
+	}
+	.daftar-pengajuan .card .card-footer {
+	    padding: .7em 1em .9em;
+		border-bottom-left-radius: 16px;
+    	border-bottom-right-radius: 16px;
+    	/*untuk posisi di bawah
+    	bottom: 0;
+	    position: absolute;
+	    width: 100%;*/
+	}
+	.daftar-pengajuan .card .card-footer .btn-light{
+		color: #353535;
+		background-color: #f7f5f5;
+		border:0;
+	}
+
+	@media (max-width: 768px) {
+		.info-absenku h4 {
+		    font-size: 14px;
+		    margin-bottom: 3%;
+		}
+		.info-absenku {
+		    font-size: 12px;
+		    margin-bottom: 6%;
+		}
+		.info-absenku img {
+    		height: 20px;
+		}
+
+		.daftar-pengajuan .nav.nav-tabs .nav-item .nav-link {
+		    padding: .3rem 1rem;
+		    margin-right: .6em;
+		    font-size: 12px;
+		}
+		.daftar-pengajuan .card-title {
+		    font-size: 14px;
+		}
+		.daftar-pengajuan .card-title .btn {
+		    left: 70%;
+		    padding: .3rem 1rem;
+		    top: 1.25em;
+		}
+		.card .card-body .btn-light {
+		    min-width: 0;
+		    font-size: 11.5px;
+		    padding: .3rem .6rem;
+		    margin-right: 0px !important;
+		}
+	}
+/*CSS Dashboad Selesai*/
+
+/*CSS Daftar*/
+	form.formdaftar h4.form-section{
+		font-family: 'Poppins SemiBold';
+		border: 0;
+		color: #353535;
+		margin-bottom: 18px;
+		margin-bottom: .7em;
+		margin-top: .5em;
+	}
+	form.formdaftar h4.form-section:first-child {
+		margin-top: 0;
+	}
+	form h4.f-daftar{
+		font-family: 'Poppins SemiBold';
+		color: #353535;
+		font-size: 15px;
+		font-weight: normal;
+		line-height: 2;
+	}
+
+	.informasi-paket .card-header{
+		color: #fff;
+		background-color: #1C77D4;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		padding: 1rem 1.5rem;
+	}
+	.informasi-paket .card-title{
+		font-family: 'Poppins SemiBold';
+		color: #fff;
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+	.informasi-paket h4.infopaket{
+		font-family: 'Poppins SemiBold';
+		color: #353535;
+		font-size: 17px;
+	}
+	.informasi-paket h4.infopaket img{
+	    float: left;
+	    width: 31px;
+	    margin-right: 10px;
+	}
+	.informasi-paket .col-md-6:last-child h4.infopaket img{
+		margin-top: .4em;
+	}
+	.informasi-paket h4.infopaket small {
+		font-family: 'Poppins Light';
+		color: #797979;
+    	font-size: 13px;
+	    margin-bottom: .4em;
+	}
+	.informasi-paket .card-footer {
+	    border-bottom-left-radius: 15px;
+	    border-bottom-right-radius: 15px;
+	    padding: 1rem 1.5rem;
+	}
+	.informasi-paket .card-footer h4 {
+		font-family: 'Poppins SemiBold';
+		color: #1C77D4;
+	}
+
+	@media (max-width: 768px) {
+		.informasi-paket .col-md-6:first-child h4.infopaket {
+			margin-bottom: 22px;
+		}
+	}
+/*CSS Daftar Selesai*/
+
+/*CSS Pengajuan Izin*/
+	p.filter {
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+        background: #ddd;
+        border: solid 1px #fff;
+    }
+
+    div.panelfilter {
+        display: none;
+        padding: 2% 7% 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.09);
+        margin-top: 1.5%;
+    }
+
+    .daftar-pengajuan .head-list-izin .card-title {
+	    margin-left: 80px;
+	}
+    .daftar-pengajuan .head-list-izin .card-title .btn {
+	    position: absolute;
+	    padding: .4rem 0rem;
+	    left: 0;
+	    top: 1.1em;
+	    width: 80px;
+	    height: 29px;
+	    text-align: center;
+	    border-top-right-radius: 12px;
+	    border-bottom-right-radius: 12px;
+	    font-size: 12px;
+	    border: 0;
+	}
+
+	@media (max-width: 768px) {
+		div.panelfilter {
+		    margin-top: 4%;
+		    padding: 4% 0 0;
+		}
+	}
+/*CSS Pengajuan Izin Selesai*/
+
+/*CSS Daftar Layanan*/
+	.card.daftar-layanan  {
+	    border: 1px solid #efefef;
+	    border-radius: 16px;
+	}
+	.card.daftar-layanan .card-header {
+    	padding: .8em 0;
+    	margin: 0 1.2em;
+	}
+	.card.daftar-layanan .card-body {
+    	padding: 1em 1.2em .8em;
+	}
+	.card.daftar-layanan .card-footer {
+    	padding: .8em 0;
+    	margin: 0 1.2em;
+		border-bottom-right-radius: 16px;
+		border-bottom-left-radius: 16px;
+	}
+
+	.card.daftar-layanan h4.infolayanan{
+		font-family: 'Poppins SemiBold';
+		color: #353535;
+		font-size: 17px;
+	}
+	.card.daftar-layanan .col-md-6:last-child h4.infolayanan{
+		color: #e14b4b;
+	}
+	.card.daftar-layanan h4.infolayanan img{
+		float: left;
+		width: 31px;
+		margin-right: 10px;
+	}
+	.card.daftar-layanan .col-md-6:last-child h4.infolayanan img{
+		margin-top: .4em;
+	}
+	.card.daftar-layanan h4.infolayanan small {
+		font-family: 'Poppins Light';
+		color: #797979;
+		font-size: 13px;
+		margin-bottom: .4em;
+	}
+	.card.daftar-layanan .col-md-6:last-child h4.infolayanan small {
+		color: #e14b4b;
+	}
+/*CSS Daftar Layanan Selesai*/
+
+/*CSS Detail Karyawan*/
+	.card-detail-karyawan .card-body.p-custom{
+		padding-left: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.card-detail-karyawan .col-md-2.border-kanan,
+	.card-detail-karyawan .col-md-10{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.card-detail-karyawan .col-md-2.border-kanan{
+		border-right: 1px solid #d8d8d8;
+	}
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs {
+		width: 100%;
+	}
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item {
+	    /*border-bottom: 1px solid #d8d8d8;*/
+	}
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link {
+	    width: 95%;
+	    /*padding-top: 0.3em;
+	    padding-bottom: 0.3em;
+	    margin: .8em 0;*/
+	    border: 0;
+	    margin-left: .8em;
+	    border-bottom: 1px solid #d8d8d8;
+	    padding: 1em 0em 1em .8em;
+	}
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item:last-child a.nav-link{
+		border-bottom: 0;
+	}
+
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a:hover,
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link:hover:not(.active),
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link.active {
+		position: relative;
+	    border: 0;
+	    border-bottom: 1px solid #d8d8d8;
+	    border-radius: 0;
+	}
+
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link.active:before,
+	.card-detail-karyawan .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link:hover::before {
+	  content: "";
+	  position: absolute;
+	  left: -.8em;
+	    top: .5em;
+	    width: 5px;
+	    height: 33px;
+	  background: #1C77D4; /* Color */
+	  box-shadow: 2px 6px 7px #00000014;
+	  z-index: 100;
+	}
+
+
+	.card-detail-karyawan .form-detail-karyawan label {
+		color: #949494;
+	}
+	.card-detail-karyawan .form-detail-karyawan p.form-control-static{
+		font-family: 'Poppins SemiBold';
+		color: #434343;
+		margin-bottom: .2em;
+	}
+
+	.card-riwayat-kerja{
+		border: 1px solid #e4e4e4;
+    	border-radius: 15px;
+	}
+	.card-riwayat-kerja .card-header{
+		background-color: #fafafa;
+		padding: 1em 1.5em;
+	}
+	.card-riwayat-kerja .card-header .btn.btn-info-status{
+		position: absolute;
+	    padding: .4rem 0rem;
+	    left: -0.42em;
+	    top: 0.1em;
+	    width: 9em;
+	    height: 2.5em;
+	    text-align: center;
+	    border-top-right-radius: 12px;
+	    border-bottom-right-radius: 12px;
+	    font-size: 13px;
+	    border: 0;
+	    font-weight: 600;
+    	letter-spacing: 1.2px;
+    	font-family: 'Poppins Regular';
+	}
+	.card-riwayat-kerja .card-header strong {
+		margin-top: .2em;
+		font-family: 'Poppins Medium';
+	}
+	.card-riwayat-kerja .card-body h4 {
+		font-family: 'Poppins SemiBold';
+	    color: #353535;
+	    font-size: 17px;
+	}
+	.card-riwayat-kerja .card-body h4 small {
+	    font-family: 'Poppins Light';
+	    color: #797979;
+	    font-size: 13px;
+	    margin-bottom: .4em;
+	}
+	.card-riwayat-kerja .card-body h4 img{
+		float: left;
+	    width: 31px;
+	    margin-right: 10px;
+	}
+
+	.card-akses-akun h4.card-title{
+		font-family: 'Poppins SemiBold';
+		text-transform: none;
+		font-size: 16px;
+	}
+	.card-akses-akun h4.card-title .btn{
+		font-family: 'Poppins Regular';
+		padding: .4rem .6rem; margin-top: -5px;
+		position: absolute; right: 20px;
+		font-size: 12px;
+	}
+
+
+	@media (max-width: 768px) {
+		.card-detail-karyawan .card-body.p-custom{
+			padding-left: 1.5rem !important;
+		}
+
+		.card-detail-karyawan .col-md-2.border-kanan{
+			border-right: 0;
+		}
+
+		.card-riwayat-kerja .card-header .btn.btn-info-status {
+		    position: static;
+		    margin-bottom: 1em;
+		    width: 100%;
+		    border-radius: 0;
+		}
+		.card-riwayat-kerja .card-header strong {
+		    margin-bottom: 1em;
+		}
+		.card-riwayat-kerja .card-header .text-right .btn{
+			    /*position: absolute;
+		    top: -11.5em;
+		    right: 1em;*/
+		}
+		.card-riwayat-kerja .card-body .col-md-3 {
+			margin-bottom: 1em;
+		}
+		.card-riwayat-kerja .card-body .col-6{
+			text-align: center;
+		}
+		.card-riwayat-kerja .card-body .col-6 h4 small {
+    		font-size: 11px;
+    		line-height: 2;
+		}
+
+		.card-akses-akun h4.card-title .btn{
+			position: static;
+    		margin-top: 1em;
+		}
+	}
+/*CSS Detail Karyawan*/
+
+/*CSS Plugin*/
+	*:focus{
+		outline: none !important;
+	}
+	select:focus{
+		box-shadow: none !important;
+		border: 1px solid #BABFC7 !important;
+	}
+
+	.datepicker td, .datepicker th{
+	    font-size: 13px;
+	    color: #000;
+	}
+	.datepicker table tr td.new, .datepicker table tr td.old {
+	    color: #ccc;
+	}
+
+	div.dataTables_wrapper div.dataTables_filter label {
+	    margin-top:0;
+	}
+
+
+	.dataTables_length .custom-select {
+		/* background: transparent; */
+	}
+	.page-link {
+		font-weight: normal;
+	    font-family: 'Poppins Regular';
+	    background: #ecf1f6;
+	    border-radius: 5px;
+	    height: 2rem;
+	    min-width: 2rem;
+	    padding: .5rem;
+	    text-align: center;
+	    border: 0;
+	    color: #333;
+	}
+	.page-link:hover {
+		background-color: #3699ff;
+		color: #fff;
+	}
+	ul.pagination .page-item.active .page-link{
+		-webkit-transition: color .15s ease,background-color .15s ease,border-color .15s ease,-webkit-box-shadow .15s ease;
+	    transition: color .15s ease,background-color .15s ease,border-color .15s ease,-webkit-box-shadow .15s ease;
+	    transition: color .15s ease,background-color .15s ease,border-color .15s ease,box-shadow .15s ease;
+	    transition: color .15s ease,background-color .15s ease,border-color .15s ease,box-shadow .15s ease,-webkit-box-shadow .15s ease;
+	    background-color: #3699ff;
+	    color: #fff;
+	    align-items: center;
+	    height: 2rem;
+	    min-width: 2rem;
+	    padding: .5rem;
+	    text-align: center;
+	    position: relative;
+	    font-size: 1rem;
+	    line-height: 1rem;
+	    font-weight: 500;
+	    border-radius: .42rem;
+	    border: 0;
+	}
+	ul.pagination li{
+		margin-left: .4rem;
+	}
+	ul.pagination .page-item.disabled .page-link {
+	    border: 0;
+	    background: #f1f1f1 !important;
+	}
+
+	ul.pagination li:first-child a,
+	ul.pagination li:last-child a{
+	    background-color: #ecf1f6 !important;
+    	border-radius: 4px !important;
+	}
+	ul.pagination li:first-child a:hover,
+	ul.pagination li:last-child a:hover{
+		background-color: #3699ff !important;
+	}
+
+	.dataTables_paginate.paging_simple_numbers {
+	    margin-top: 0.5em !important;
+	}
+/*CSS Plugin selesai*/
+
+
+/* Start Custom Background, title dan button close Header Modal Boostrap */
+	.modal .modal-dialog .card-header {
+		background-color: #3d77d4;
+	}
+	.modal .modal-dialog .card-header h3,
+	.modal .modal-dialog .card-header button{
+		color: #fff;
+	}
+/* end Custom Background, title dan button close Header Modal Boostrap */
+
+input:disabled {cursor: no-drop !important;}
+
+/* section */
+/* CSS Chekbox */
+	input[type=checkbox],
+    input[type=radio] {
+        --active: #275efe;
+        --active-inner: #fff;
+        --focus: 2px rgba(39, 94, 254, 0.3);
+        --border: #bbc1e1;
+        --border-hover: #275efe;
+        --background: #fff;
+        --disabled: #f6f8ff;
+        /* --disabled-inner: #e1e6f9; */
+        --disabled-inner: #8db7fb;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 17px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+
+    input[type=checkbox]:after,
+    input[type=radio]:after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+
+    input[type=checkbox]:checked,
+    input[type=radio]:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: 0.3s;
+        --d-t: 0.6s;
+        --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    input[type=checkbox]:disabled,
+    input[type=radio]:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: 0.9;
+    }
+
+    input[type=checkbox]:disabled:checked,
+    input[type=radio]:disabled:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+    }
+
+    input[type=checkbox]:disabled+label,
+    input[type=radio]:disabled+label {
+        cursor: not-allowed;
+    }
+
+    input[type=checkbox]:hover:not(:checked):not(:disabled),
+    input[type=radio]:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+    }
+
+    input[type=checkbox]:focus,
+    input[type=radio]:focus {
+        box-shadow: 0 0 0 var(--focus);
+    }
+
+    input[type=checkbox]:not(.switch),
+    input[type=radio]:not(.switch) {
+        width: 17px;
+    }
+
+    input[type=checkbox]:not(.switch):after,
+    input[type=radio]:not(.switch):after {
+        opacity: var(--o, 0);
+    }
+
+    input[type=checkbox]:not(.switch):checked,
+    input[type=radio]:not(.switch):checked {
+        --o: 1;
+    }
+
+    input[type=checkbox]+label,
+    input[type=radio]+label {
+        font-size: 14px;
+        line-height: 21px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+
+    input[type=checkbox]:not(.switch) {
+        border-radius: 7px;
+    }
+
+    input[type=checkbox]:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 5px;
+    	top: 2px;
+        transform: rotate(var(--r, 20deg));
+    }
+
+    input[type=checkbox]:not(.switch):checked {
+        --r: 43deg;
+    }
+
+    input[type=checkbox].switch {
+        width: 38px;
+        border-radius: 11px;
+    }
+
+    input[type=checkbox].switch:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        /* width: 15px;
+		height: 15px; */
+		width: 11px;
+    	height: 11px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+    }
+
+    input[type=checkbox].switch:checked {
+        --ab: var(--active-inner);
+        --x: 20px;
+    }
+
+    input[type=checkbox].switch:disabled:not(:checked):after {
+        opacity: 0.6;
+    }
+
+    input[type=radio] {
+        border-radius: 50%;
+    }
+
+    input[type=radio]:after {
+        /* width: 19px;
+		height: 19px; */
+		width: 15px;
+    	height: 15px;
+        border-radius: 50%;
+        background: var(--active-inner);
+        opacity: 0;
+        transform: scale(var(--s, 0.7));
+    }
+
+    input[type=radio]:checked {
+        --s: 0.5;
+	}
+/* CSS Chekbox Selesai */
+
+
+/* BEGIN LOCKED SELECTION SELECT2 */
+.locked-tag .select2-selection__choice__remove {
+	display: none !important;
+
+}
+
+/* I suggest to hide  all selected tags from drop down list */
+.select2-results__option[aria-selected="true"] {
+	display: none;
+}
+
+/* END LOCKED SELECTION SELECT2 */
+
+/* START SPINNER */
+.custom-lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+  }
+  .custom-lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #1760B7;
+	border-radius: 50%;
+	animation: custom-lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #1760B7 transparent transparent transparent;
+  }
+  .custom-lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+  }
+  .custom-lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+  }
+  .custom-lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+  }
+  @keyframes custom-lds-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+/* END SPINNER */
+
+/* custom card */
+	.card-footer-rounded{
+		border-bottom-left-radius: 15px !important;
+    	border-bottom-right-radius: 15px !important;
+	}
+/* custom card finish*/
+table label.badge {
+    margin-bottom: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    margin-bottom: 5px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li:first-child{
+    margin-bottom: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li:last-child,
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li:nth-last-child(2) {
+    margin-bottom: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice.locked-tag {
+    background-color: #404f67 !important;
+}
+
+.img-fit-cover{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	/* object-fit: scale-down; */
+}
+
+.melayang {
+	position: fixed;
+	bottom: 60px;
+	z-index: 999998;
+	right: 10px;
+}
+
+/* Header Kalendar */
+.fc-widget-header{
+	background-color:#1C77D4;
+	color:#FFFFFF;
+}
+
+/*Tambahan CSS untuk tampilan QuickSetup*/
+
+/*CSS Default*/
+.w-semibold{
+	font-family: 'Poppins SemiBold';
+}
+.w-medium{
+	font-family: 'Poppins Medium' !important;
+}
+
+.alert-info{
+	background: #F1FFFF !important;
+	color: #1B6CC2 !important;
+}
+/*CSS Default*/
+
+
+/*CSS Quick Setting*/
+.media img.ico-dash{
+	height: 50px;
+	width: auto;
+}
+.media .pl-0{
+    padding-left: 0 !important;
+}
+.media a{
+	color: #1B6CC2;
+}
+
+img.ico-tab{
+	height: 32px;
+	width: 24px;
+	object-fit: contain;
+}
+@media (max-width: 768px) {
+	.tabs-quicksetup .nav-item {
+	    width: 50%;
+	    margin-bottom: 10px;
+	}
+	.tabs-quicksetup .nav-item .nav-link {
+	    font-size: 10px;
+	    min-height: 53px;
+	}
+	.tabs-quicksetup .form-group small.text-muted{
+		display: none;
+	}
+}
+/*CSS Quick Setting*/
+.w50 {width: 50px;}
+
+.alert_kelola_mudah {
+	display: inline-block;
+	width: 450px;
+	position: absolute;
+	z-index: 9999;
+	/*right: 30px;*/
+	left: 0;
+	line-height: 1.5;
+	color: #004085;
+	background-color: #cce5ff;
+	border-color: #b8daff;
+	border-radius: 15px;
+}
