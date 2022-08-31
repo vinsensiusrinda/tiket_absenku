@@ -70,15 +70,18 @@ class Task extends MY_Controller
 	}
 
 	//tampilan form tambah
-	public function form()
+	public function form($no_tiket = null)
 	{
-
-		$data['judul'] = 'Tambah Data';
-		$data['aktif'] = 'task';
-		// $data['pelanggan'] = $this->Task_m->get_pelanggan();
-		$data['users'] = $this->Task_m->get_user();
-		$data['menu'] = $this->load->view('main_menu', $data, true);
-		$data['content'] = $this->load->view('task/form', $data, true);
+		if ($no_tiket == null) {
+			$data['judul'] = 'Tambah Data';
+			$data['aktif'] = 'task';
+			$data['users'] = $this->Task_m->get_user();
+			$data['menu'] = $this->load->view('main_menu', $data, true);
+			$data['content'] = $this->load->view('task/form', $data, true);
+		} else {
+			$data['data'] = $this->Task_m->getDataById($no_tiket);
+			$this->load->view('task/form', $data);
+		}
 		$this->load->view('main_template', $data, false);
 	}
 
